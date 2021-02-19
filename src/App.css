@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+.container form {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+body .form-control:focus{
+  box-shadow: unset;
+  outline: 0 none;
+}
