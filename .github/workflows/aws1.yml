@@ -17,8 +17,7 @@ jobs:
       - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::543468541197:role/api-launchpad-oidc2
-         # role-session-name: deployment
+          role-to-assume: arn:aws:iam::543468541197:role/api-launchpad-oidc
           aws-region: ${{ env.AWS_REGION }}
       # Upload a file to AWS s3
       - name:  Copy index.html to s3
